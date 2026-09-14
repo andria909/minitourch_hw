@@ -112,11 +112,13 @@ def test_sigmoid(a: float) -> None:
     assert abs(sigmoid(0.5) - 0.6224593312018544) < 1e-5
     assert sigmoid(a + 6.7) >= sigmoid(a)
 
+
 @pytest.mark.task0_2
 @given(small_floats, small_floats, small_floats)
 def test_transitive(a: float, b: float, c: float) -> None:
     "Test the transitive property of less-than (a < b and b < c implies a < c)"
     assert not (lt(a, b) and lt(b, c)) or lt(a, c)
+
 
 @pytest.mark.task0_2
 @given(small_floats, small_floats)
@@ -127,6 +129,7 @@ def test_symmetric(a: float, b: float) -> None:
     """
     assert mul(a, b) == mul(b, a)
 
+
 @pytest.mark.task0_2
 @given(small_floats, small_floats, small_floats)
 def test_distribute(a: float, b: float, c: float) -> None:
@@ -135,6 +138,7 @@ def test_distribute(a: float, b: float, c: float) -> None:
     :math:`z \times (x + y) = z \times x + z \times y`
     """
     assert mul(a, add(b, c)) - add(mul(a, b), mul(a, c)) < 1e-5
+
 
 @pytest.mark.task0_2
 @given(small_floats, small_floats)

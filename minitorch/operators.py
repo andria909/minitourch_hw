@@ -121,6 +121,7 @@ def map(fn: Callable[[float], float]) -> Callable[[Iterable[float]], Iterable[fl
         return [fn(x) for x in ls]
     return map_f
 
+
 def negList(ls: Iterable[float]) -> Iterable[float]:
     "Use `map` and `neg` to negate each element in `ls`"
     return map(neg)(ls)
@@ -174,6 +175,7 @@ def reduce(
         return result
 
     return reduce_f
+
 
 def sum(ls: Iterable[float]) -> float:
     "Sum up a list using `reduce` and `add`."
