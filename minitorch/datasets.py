@@ -21,6 +21,7 @@ class Graph:
 
 
 def simple(N: int) -> Graph:
+    """Split N generated points into two classes at x = 0.5."""
     X = make_pts(N)
     y = []
     for x_1, x_2 in X:
@@ -30,6 +31,7 @@ def simple(N: int) -> Graph:
 
 
 def diag(N: int) -> Graph:
+    """Split N generated points into two classes at x + y = 0.5."""
     X = make_pts(N)
     y = []
     for x_1, x_2 in X:
@@ -39,6 +41,7 @@ def diag(N: int) -> Graph:
 
 
 def split(N: int) -> Graph:
+    """Split N generated points into two classes where x < 0.2 or x > 0.8."""
     X = make_pts(N)
     y = []
     for x_1, x_2 in X:
@@ -48,6 +51,7 @@ def split(N: int) -> Graph:
 
 
 def xor(N: int) -> Graph:
+    """Split N generated points into two classes using an XOR pattern."""
     X = make_pts(N)
     y = []
     for x_1, x_2 in X:
@@ -57,6 +61,7 @@ def xor(N: int) -> Graph:
 
 
 def circle(N: int) -> Graph:
+    """Split N generated points into two classes inside and outside a circle."""
     X = make_pts(N)
     y = []
     for x_1, x_2 in X:
@@ -67,6 +72,7 @@ def circle(N: int) -> Graph:
 
 
 def spiral(N: int) -> Graph:
+    """Split N generated points into two classes forming two spirals."""
     def x(t: float) -> float:
         return t * math.cos(t) / 20.0
 
