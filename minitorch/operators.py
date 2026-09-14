@@ -88,6 +88,7 @@ def inv(x: float) -> float:
     "$f(x) = 1/x$"
     return 1 / (x + EPS)
 
+
 def inv_back(x: float, d: float) -> float:
     r"If $f(x) = 1/x$ compute $d \times f'(x)$"
     return -d / (x * x + EPS)
@@ -119,9 +120,6 @@ def map(fn: Callable[[float], float]) -> Callable[[Iterable[float]], Iterable[fl
     def map_f(ls: Iterable[float]) -> Iterable[float]:
         return [fn(x) for x in ls]
     return map_f
-
-    
-
 
 def negList(ls: Iterable[float]) -> Iterable[float]:
     "Use `map` and `neg` to negate each element in `ls`"
@@ -172,12 +170,10 @@ def reduce(
     def reduce_f(ls: Iterable[float]) -> float:
         result = start
         for x in ls:
-            result = fn(result, x)
+            result = fn(x, result)
         return result
+
     return reduce_f
-
-
-
 
 def sum(ls: Iterable[float]) -> float:
     "Sum up a list using `reduce` and `add`."
