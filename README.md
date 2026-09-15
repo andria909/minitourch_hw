@@ -24,3 +24,69 @@ Manual classifier parameters:
 These parameters implement the decision boundary `x = 0.5`.
 
 ![Simple dataset classifier](assets/simple-classifier.png)
+
+## Module 1 — Training results
+
+### Simple
+
+Training parameters:
+
+* Points: 50
+* Hidden layers: 2
+* Learning rate: 0.1
+* Epochs: 500
+
+After 10 iterations, the loss was `37.06847641923458` and `21/50` objects were classified correctly.
+
+Final loss: `12.591894808722811`  
+Final correct: `50/50`
+
+![Simple training result](assets/module1-simple.png)
+
+### Diag
+
+Training parameters:
+
+* Points: 50
+* Hidden layers: 4
+* Learning rate: 0.05
+* Epochs: 1000
+
+After 10 epochs, the loss was `28.829999191377475` and `43/50` objects were classified correctly.
+
+Final loss: `4.257752517110073`  
+Final correct: `49/50`
+
+![Diag training result](assets/module1-diag.png)
+
+### Split
+
+Training parameters:
+
+* Points: 50
+* Hidden layers: 3
+* Learning rate: 0.1
+* Epochs: 2000
+
+After 10 epochs, the loss was `36.2130477602129` and `15/50` objects were classified correctly.
+
+Final loss: `3.517079592786552`  
+Final correct: `49/50`
+
+![Split training result](assets/module1-split.png)
+
+### Xor
+
+Training parameters:
+
+* Points: 50
+* Hidden layers: 7
+* Learning rate: 0.05
+* Epochs: 1500
+
+After 10 epochs, the loss was `35.038760771491376` and `29` objects were classified correctly.
+
+Final loss: `9.924160815918189`  
+Final correct: `49/50`
+
+![Xor training result](assets/module1-xor.png)
