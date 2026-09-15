@@ -128,7 +128,7 @@ class Scalar:
         return Sigmoid.apply(self)
 
     def relu(self) -> Scalar:
-        return ReLU.apply(self) 
+        return ReLU.apply(self)
 
     # Variable elements for backprop
 

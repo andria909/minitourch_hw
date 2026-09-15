@@ -101,6 +101,7 @@ def backpropagate(variable: Variable, deriv: Any) -> None:
                 for parent, parent_deriv in var.chain_rule(d):
                     grads[id(parent)] = grads.get(id(parent), 0.0) + parent_deriv
 
+
 @dataclass
 class Context:
     """
