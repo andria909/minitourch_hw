@@ -90,3 +90,77 @@ Final loss: `9.924160815918189`
 Final correct: `49/50`
 
 ![Xor training result](assets/module1-xor.png)
+
+## Module 2 — Training results
+
+### Simple
+
+Training parameters:
+
+* Points: 50
+* Hidden layer size: 2
+* Learning rate: 0.1
+* Epochs: 500
+* Time per epoch: 0.090 s
+
+After 10 epochs, the loss was `34.98646467006687` and `16/50` objects were classified correctly.
+
+Final loss: `19.002294354450367`
+
+Final correct: `50/50`
+
+![Simple tensor training result](assets/module2-simple.png)
+
+### Diag
+
+Training parameters:
+
+* Points: 50
+* Hidden layer size: 4
+* Learning rate: 0.05
+* Epochs: 1000
+* Time per epoch: 0.198 s
+
+After 10 epochs, the loss was `22.015871427383765` and `43/50` objects were classified correctly.
+
+Final loss: `4.490139411955518`
+
+Final correct: `49/50`
+
+![Diag tensor training result](assets/module2-diag.png)
+
+### Split
+
+Training parameters:
+
+* Points: 50
+* Hidden layer size: 4
+* Learning rate: 0.05
+* Epochs: 1000
+* Time per epoch: 0.187 s
+
+After 10 epochs, the loss was `35.840728205031674` and `25/50` objects were classified correctly.
+
+Final loss: `11.255814898106498`
+
+Final correct: `48/50`
+
+![Split tensor training result](assets/module2-split.png)
+
+### Xor
+
+Training parameters:
+
+* Points: 50
+* Hidden layer size: 8
+* Learning rate: 0.05
+* Epochs: 1500
+* Time per epoch: 0.509 s
+
+After 10 epochs, the loss was `35.87986259120219` and `28/50` objects were classified correctly.
+
+Final loss: `10.278114251859376`
+
+Final correct: `46/50`
+
+![Xor tensor training result](assets/module2-xor.png)
